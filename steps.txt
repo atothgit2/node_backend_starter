@@ -1,0 +1,52 @@
+https://www.youtube.com/watch?v=BKz7rnbQyK4
+
+1.) create .gitingore
+  #  node_modules
+  #  dist
+  #  coverage
+  #  .env
+
+2.) npm init
+
+3.) create node version manager file
+    $ node.exe -v > .nvmrc
+
+4.) npm install typescript ts-node @types/node --save-dev
+
+5.) $ npx tsc --init
+
+6.) $ npm i eslint --save-dev
+    $ npx eslint --init
+
+7.) create .eslintignore
+  #  node_modules
+  #  dist
+  #  coverage
+  #  .env
+
+8.) $ npm i prettier --save-dev
+    Create .prettierrc file
+
+  {
+    "tabWidth": 2,
+    "printWidth": 120, // basically line width
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "avoid",
+    "semi": true
+  }
+
+9.) Make Prettier and ESlint work together
+    $ npm i eslint-plugin-prettier --save-dev
+    $ npm i eslint-config-prettier --save-dev
+
+10.) mofify .eslintrc.js -- see project
+
+11.) $ npm i eslint-import-resolver-typescript tsconfig-paths --save-dev
+
+12.) modify tsconfig.json
+
+13.) $ npm i dotenv-safe
+
+14.)  $ npm i jest ts-jest @types/jest --save-dev
+      $ npx ts-jest config:init                     // create config file
